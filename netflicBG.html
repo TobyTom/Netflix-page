@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width:100%;
+            height: 100vh;
+           
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .imgWrapper::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: 120px 100px 150px #000000, inset -120px  -100px 250px #000000;
+        }
+        h1{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            bottom: 900px;
+            color: white;
+            font-size: 5rem;
+            text-align: center;
+           
+            z-index: 4;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        input[type=checkbox]:checked ~ .box{
+            position: absolute;
+            left: 50%;
+        }
+        input[type=text]{
+            padding: 15px 40px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+       <div class="imgWrapper">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/d54727b4-2ad9-4e71-bb48-0899f55f103a/8eff73e1-0024-4619-bdcd-4b1359ea0c58/NG-en-20230220-popsignuptwoweeks-perspective_alpha_website_medium.jpg" alt="">
+       </div>
+       <h1>Welcome to my <br>Html class</h1>
+
+
+       <input type="checkbox">
+       <div class="box"></div>
+
+       <input type="text">
+
+
+
+    </section>
+</body>
+</html>

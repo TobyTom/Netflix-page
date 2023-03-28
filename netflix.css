@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    height: 100vh;
+    width: 100%;
+    font-stretch: expanded;
+}
+.imageD::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 120px 100px 150px #000000, inset -200px -200px 500px #000000;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.net{
+    color: red;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 10%;
+    z-index: 5;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.sign{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 2%;
+    width: 5%;
+    height: 5%;
+    border-radius: 5pt;
+    color: white;
+    z-index: 2;
+    background-color: red;
+    font-weight: bold;
+}
+.sign:hover{
+    background-color: rgb(122, 16, 16);
+    cursor: pointer;
+}
+#unlimited{
+    top: 0;
+    color: white;
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 21%;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: -1.5px;
+    z-index: 5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#watch{
+    position: absolute;
+    top: 0;
+    color: white;
+    margin-top: 24%;
+    margin-left: 37%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    z-index: 5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#Ready{
+    position: absolute;
+    top: 0;
+    color: white;
+    margin-top: 27.2%;
+    margin-left: 28%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+input{
+    position: absolute;
+    top: 0;
+    margin-top: 30%;
+    margin-left: 30%;
+    width: 25%;
+    height: 8%;
+    z-index: 5;
+    background-color: transparent;
+    color: rgb(214, 178, 178);
+    padding-left: 1%;
+    font-size: medium;
+    border-radius: 2pt;
+    border-color: rgb(223, 165, 165);
+}
+.get{
+    top: 0;
+    position: absolute;
+    margin-left: 57%;
+    margin-top: 30%;
+    width: 15%;
+    height: 9%;
+    border-radius: 5pt;
+    color: white;
+    z-index: 5;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: x-large;
+}
+.get:hover{
+    background-color: rgb(133, 20, 20);
+    cursor: pointer;
+}
+.section1{
+    height: 70vh;
+    background-color: rgb(7, 0, 0);
+    position: relative;
+}
+.section1 .tv{
+    height: 80%;
+    width: 37%;
+    position: absolute;
+    right: 11%;
+    margin-top: -30%;
+    background-color: grey;
+    z-index: 2;
+}
+hr{
+    height: 1%;
+    background-color: rgb(53, 46, 46);
+    z-index: 2;
+}
+.Enjoy{
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 12% 11%;
+    font-size: 2.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    z-index: 2;
+}
+.more{
+    color: white;
+    /* z-index: 5; */
+    position: absolute;
+    top: 0;
+    margin: 17% 11%;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+}
+.vid{
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    margin-left: 25%;
+    margin-top: -120%;
+}
+.check{
+    margin-top: 85%;
+    margin-left: 35%;
+}
+:checked ~ .vid{
+    margin-top: 15%;
+}
